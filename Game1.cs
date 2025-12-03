@@ -12,9 +12,9 @@ namespace topic_1_Assignment
         Rectangle window;
 
         Texture2D dinoTexture;
-        Texture2D sonictexture;
-        //add more textures here
-        //add more textures here
+        Texture2D sonicTexture;
+        Texture2D plantTexture;
+        Texture2D marioTexture;
 
         public Game1()
         {
@@ -44,9 +44,9 @@ namespace topic_1_Assignment
 
             // TODO: use this.Content to load your game content here
             dinoTexture = Content.Load<Texture2D>("dino");
-            sonictexture = Content.Load<Texture2D>("sonic");
-            //load more textures here
-            //load more textures here
+            sonicTexture = Content.Load<Texture2D>("sonic");
+            plantTexture = Content.Load<Texture2D>("plant");
+            marioTexture = Content.Load<Texture2D>("mario");
 
         }
 
@@ -68,19 +68,10 @@ namespace topic_1_Assignment
             _spriteBatch.Begin();
 
             _spriteBatch.Draw(dinoTexture, new Vector2(10, 10), Color.White);
-            _spriteBatch.Draw(dinoTexture, new Vector2(100, 200), Color.White);
-            _spriteBatch.Draw(sonictexture, new Vector2(500, 400), Color.White);
-            _spriteBatch.Draw(sonictexture, new Vector2(300, 100), Color.White);
-            _spriteBatch.Draw(sonictexture, new Vector2(200, 300), Color.White);
-            _spriteBatch.Draw(dinoTexture, new Vector2(600, 150), Color.White);
-            _spriteBatch.Draw(dinoTexture, new Vector2(400, 350), Color.White);
-            //draw more textures here
-            //draw more textures here
-
-
-
-
-
+            _spriteBatch.Draw(sonicTexture, new Vector2(500, 400), Color.White);
+            _spriteBatch.Draw(plantTexture, new Vector2(300, 100), Color.White);
+            _spriteBatch.Draw(marioTexture, new Vector2(200, 300), Color.White);
+         
 
             _spriteBatch.End();
 
