@@ -11,6 +11,8 @@ namespace topic_1_Assignment
 
         Rectangle window;
 
+        Texture2D backgroundTexture;
+
         Texture2D dinoTexture;
         Texture2D sonicTexture;
         Texture2D pikachuTexture;
@@ -48,6 +50,9 @@ namespace topic_1_Assignment
             pikachuTexture = Content.Load<Texture2D>("pikachu");
             marioTexture = Content.Load<Texture2D>("mario");
 
+
+            backgroundTexture = Content.Load<Texture2D>("background");
+
         }
 
         protected override void Update(GameTime gameTime)
@@ -67,10 +72,12 @@ namespace topic_1_Assignment
             // TODO: Add your drawing code here
             _spriteBatch.Begin();
 
-            _spriteBatch.Draw(dinoTexture, new Vector2(0, 0), Color.White);
-            _spriteBatch.Draw(sonicTexture, new Vector2(20, 20), Color.White);
-            _spriteBatch.Draw(pikachuTexture, new Vector2(30, 30), Color.White);
-            _spriteBatch.Draw(marioTexture, new Vector2(40, 40), Color.White);
+            _spriteBatch.Draw(backgroundTexture, window, Color.White);
+
+            _spriteBatch.Draw(dinoTexture, new Vector2(270, 170), Color.White);
+            _spriteBatch.Draw(sonicTexture, new Vector2(600, 300), Color.White);
+            _spriteBatch.Draw(pikachuTexture, new Vector2(560, 130), Color.White);
+            _spriteBatch.Draw(marioTexture, new Vector2(100, 300), Color.White);
          
 
             _spriteBatch.End();
