@@ -13,13 +13,13 @@ namespace topic_1_Assignment
 
         Texture2D dinoTexture;
         Texture2D sonicTexture;
-        Texture2D plantTexture;
+        Texture2D pikachuTexture;
         Texture2D marioTexture;
 
         public Game1()
         {
             _graphics = new GraphicsDeviceManager(this);
-            Content.RootDirectory = "Content";
+            Content.RootDirectory = "content";
             IsMouseVisible = true;
         }
 
@@ -45,7 +45,7 @@ namespace topic_1_Assignment
             // TODO: use this.Content to load your game content here
             dinoTexture = Content.Load<Texture2D>("dino");
             sonicTexture = Content.Load<Texture2D>("sonic");
-            plantTexture = Content.Load<Texture2D>("plant");
+            pikachuTexture = Content.Load<Texture2D>("pikachu");
             marioTexture = Content.Load<Texture2D>("mario");
 
         }
@@ -67,10 +67,10 @@ namespace topic_1_Assignment
             // TODO: Add your drawing code here
             _spriteBatch.Begin();
 
-            _spriteBatch.Draw(dinoTexture, new Vector2(10, 10), Color.White);
-            _spriteBatch.Draw(sonicTexture, new Vector2(500, 400), Color.White);
-            _spriteBatch.Draw(plantTexture, new Vector2(300, 100), Color.White);
-            _spriteBatch.Draw(marioTexture, new Vector2(200, 300), Color.White);
+            _spriteBatch.Draw(dinoTexture, new Vector2(0, 0), Color.White);
+            _spriteBatch.Draw(sonicTexture, new Vector2(20, 20), Color.White);
+            _spriteBatch.Draw(pikachuTexture, new Vector2(30, 30), Color.White);
+            _spriteBatch.Draw(marioTexture, new Vector2(40, 40), Color.White);
          
 
             _spriteBatch.End();
